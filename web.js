@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 var linea = function(){
-fs.readFileSync('index.html');
+return fs.readFileSync('index.html').toString;
 }
 
 
