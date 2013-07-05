@@ -4,10 +4,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 var linea = function(){
-fs.readFileSync('index.html', function(err, data) {
-if (err) throw err;
-return data.toString();
-})
+fs.readFileSync('index.html');
 }
 
 
