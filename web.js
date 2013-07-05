@@ -7,7 +7,7 @@ var linea = function(){
 fs.readFileSync('index.html', function(err, data) {
 if (err) throw err;
 return data.toString();
-}
+})
 }
 
 
